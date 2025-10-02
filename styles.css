@@ -1,0 +1,32 @@
+.mySlides {
+    display: none;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 30%;
+}
+
+h2 {
+    font-family: calibri;
+}
+
+body {
+    background-color: #FFFFFF;
+    margin-left: 50px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) { 
+    background-color: #dddddd;
+}
+
+p.ex1 {
+    margin-left: 250px;
+}
