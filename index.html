@@ -1,99 +1,13 @@
 <!DOCTYPE html>
-<head>
-    <title>Document</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <img src="stevethestag.png" alt="Banner" width="1200" height="300">
-        <h1><b>ENG0018 Computer Laboratory 2025/26</b></h1>
-        <h2>Student URN: 6931919</h2>
-    <hr>
-    <h2><b>Conference paper: Bridge Deck Repairs</b></h2>
-    <hr>
-</head>
+<html>
+    <head>
+        <script src="script.js" defer></script>
+        <title>Change Button Colour</title>
+    </head>
     <body>
-        <table>
-            <tr><th><h3>Table of Contents</h3></th></tr>
-            <tr>
-                <td><a href="#Abstract">Abstract</a></td>
-            </tr>
-            <tr>
-                <td><a href="#Introduction">Introduction</a></td>
-            </tr>
-            <tr>
-                <td><a href="#Analysis and discussion">Analysis and discussion</a></td>
-            </tr>
-            <tr>
-                <td><a href="#References">References</a></td>
-            </tr>
-        </table>
-        <hr>
-        <p class="ex1">
-            <pre>
-                <h3 id="Abstract">Abstract</h3>
-This paper presents a novel adaptive active learning strategy. The most accurate
-classification model from a heterogeneous pool of classifiers is selected at each
-learning epoch to guide the querying process.
-            </pre>
-        </p>
-        <p class="ex1">
-            <pre>
-                <h3 id="Introduction">Introduction</h3>
-Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is learnt by an
-intelligent machine through the interaction of an oracle with the machine system, over a sequence of
-learning epochs. A distinctive component in an active system is the querying strategy, used to sample
-candidate training instances from a pool and evaluate them for informativeness, i.e., their potential
-to improve the classification model. Various strategies have been proposed including; Query by
-Committee (Seung et al., 1992), Monte Carlo estimation (Roy and McCallum, 2001), uncertainty
-sampling (Lewis and Gale, 1994) and version space reduction (margin sampling) (Tong and Koller,
-2001). Irrespective of how the most informative pattern instances are chosen at each epoch they are
-presented for labeling, to a machine (database) or human oracle that has knowledge of the class
-labels. After adding the newly labeled instances to the current training set, a revised model is
-subsequently induced. A goal of this process is to achieve an efficient, incremental advancement of
-learning at each epoch. The process is continued until some stopping criterion has been met, such as
-reaching a stage where information from the selected instances is contrary to the model, causing the
-classifier confidence to drop, as in Vlachos (2008).
-            </pre>
-        </p>
-        <h3 id="Analysis and discussion">Analysis and discussion</h3>
-        <p>
-            <pre>
-Bridge deck repair durability is the subject of much recent research such as in <a href=”https://www.icevirtuallibrary.com/doi/full/10.1680/jbren.21.00034”>Toshihiko et al
-(2023).</a> Table 1: Data on cost and lifespan of bridge repairs.
-                </pre>
-            </p>
-            <table>
-                <tr>
-                    <th>£ Cost of repairs</th>
-                    <th>Lifespan of repairs (years)</th>
-                </tr>
-                <tr>
-                    <td>0.7 m</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>3.3 m</td>
-                    <td>4</td>
-                </tr>
-                <tr>
-                    <td>2.6 m</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>17.4 m</td>
-                    <td>7</td>
-                </tr>
-                <tr>
-                    <td>8.8 m</td>
-                    <td>9</td>
-                </tr>
-            </table>
-            <h3 id="References">References</h3>
-            <pre>
-                <p>
-Angluin, D. (1988). Queries and concept learning. Machine Learning, 2(4), 319-342.
-Cohn, D., Atlas, L., & Ladner, R. (1994).
-                </p>
-            </pre>
-            <a href="url">link text</a>
-        </body>
-        </html>
+        <form action="">
+            <input id="input1" type="text" placeholder="Enter username"></input>
+        </form>
+        <button id="colorButton">Click me to change colour</button>
+    </body>
+</html>
