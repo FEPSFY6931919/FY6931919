@@ -1,11 +1,13 @@
-var button = document.getElementById("colorButton");
+var button = document.getElementById("Button");
+
+var paragraph = document.getElementById("paragraph");
 
 var text = document.getElementById("input1");
 
 var choice = true;
 
-function output_text() {
-    window.alert("Entered " + text.value)
+function random_number() {
+    paragraph.textContent = Math.floor(Math.random() * 10) + 1;
 }
 
-button.addEventListener("click", output_text);
+button.addEventListener("click", random_number);
