@@ -1,13 +1,29 @@
-var button = document.getElementById("Button");
+google.charts.setOnLoadCallback(drawChart);
+google.charts.load('current', {'packages':['corechart']});
 
-var paragraph = document.getElementById("paragraph");
 
-var text = document.getElementById("input1");
 
-var choice = true;
-
-function random_number() {
-    paragraph.textContent = Math.floor(Math.random() * 10) + 1;
+function drawChart() {
+    var data = new google.visualization.DataTable();
+        data.addColumn('number', 'Age');
+        data.addColumn('number', 'Salary');
+        data.addRows([
+            [25, 40000],
+            [30, 50000],
+            [35, 60000],
+            [40, 75000],
+            [45, 80000],
+            [50, 90000]
+        ]);
+        var options = {
+        title: 'Age vs. Salary',
+        hAxis: { title: 'Age' },
+        vAxis: { title: 'Salary' }
+    };
+    
+    var chart = new google.visualization.ScatterChart(document.getElementById('chart_div'));
+    
+    chart.draw(data, options);
 }
 
-button.addEventListener("click", random_number);
+drawChart();
