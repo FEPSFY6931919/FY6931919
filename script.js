@@ -1,29 +1,25 @@
+google.charts.load('current', {'packages':['corechart', 'bar']});
 google.charts.setOnLoadCallback(drawChart);
-google.charts.load('current', {'packages':['corechart']});
 
 
 
 function drawChart() {
     var data = new google.visualization.DataTable();
-        data.addColumn('number', 'Age');
-        data.addColumn('number', 'Salary');
+        data.addColumn('string', 'Cities');
+        data.addColumn('number', 'Population');
         data.addRows([
-            [25, 40000],
-            [30, 50000],
-            [35, 60000],
-            [40, 75000],
-            [45, 80000],
-            [50, 90000]
+            ['London', 9648000],
+            ['Birmingham', 1153900],
+            ['Edinburgh', 554000],
         ]);
         var options = {
-        title: 'Age vs. Salary',
-        hAxis: { title: 'Age' },
-        vAxis: { title: 'Salary' }
+        title: 'Population of different cities in 2024',
+        hAxis: { title: 'Cities' },
+        vAxis: { title: 'Population' },
+        colors: ['red']
     };
     
-    var chart = new google.visualization.ScatterChart(document.getElementById('chart_div'));
+    var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
     
     chart.draw(data, options);
 }
-
-drawChart();
