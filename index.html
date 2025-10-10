@@ -3,15 +3,21 @@
     <head>
         <script src="script.js" defer></script>
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-        <title>Javascript Experiments</title>
+        <title>Time stamp feature</title>
     </head>
     <body>
-        <form action="">
-            <input id="input1" type="text" placeholder="Enter username"></input>
-        </form>
-        <button id="Button">Click me to change colour</button>
-        <div id="chart_div">
-
-        </div>
+        <p id="intro_text">
+            This feature displays the last modified time of the repository and allows you to verify it.
+        </p>
+        <p id="analysis_text">
+            The last modified time is fetched from the GitHub API and displayed below.
+        </p>
+        <div id="last-updated">Loading last update time...</div>
+        <!-- Verify Button -->
+        <button onclick="verifyLastUpdatedTime()" style="display: block; margin: 10px auto; padding: 8px 16px;">
+            Verify Last Modified Time
+        </button>
+        <hr>
+        <p id="totalWordCount"></p>
     </body>
 </html>
