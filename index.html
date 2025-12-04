@@ -9,6 +9,7 @@
 </head>
 <body>
     <header>
+        <img src="banner.png" alt="University Banner">
         <h1>Process Intensification in Petroleum Refining</h1>
     </header>
     <h5>Khalid Ahmed</h5>
@@ -16,7 +17,6 @@
     <h3>Table of Contents</h3>
     <ol>
         <li><a href="#abstract">Abstract</a></li>
-        <li><a href="#introduction">Introduction</a></li>
         <li><a href="#main">Process Intensification (PI) in Refining</a></li>
         <li><a href="#key_techniques">Reaction–Separation Integration: Key Techniques</a></li>
         <li><a href="#challenges">Challenges and Limitations</a></li>
@@ -44,20 +44,13 @@
         </p>
     </section>
     <hr>
-    <section id="introduction">
-        <h2>Introduction</h2>
-        <p>
-
-        </p>
-    </section>
-    <hr>
     <section id="main">
         <h2>Process Intensification (PI) in refining</h2>
         <p>
             Process intensification is defined as the development of novel apparatuses and techniques that, compared to those
             commonly used today, are expected to bring dramatic improvements in manufacturing and processing, substantially
             decreasing equipment-size/production-capacity ratio, energy consumption, or waste production, and ultimately
-            resulting in cheaper, sustainable technologies. [X]
+            resulting in cheaper, sustainable technologies (<a href="#ref1">Stankiewicz and Moulijn, 2000</a>).
 
             In refining, PI can be applied through several approaches, including Reaction–Separation Integration, Separation
             Intensification, Energy Integration, and Process Modularisation.
@@ -67,7 +60,7 @@
             which reduces both the cost and carbon footprint.
 
             <figure>
-                <img src="Conventional Refinery.png"
+                <img src="Scheme without utilising PI.png"
                 alt="Figure1. Simplified process flow of a conventional refinery without utilising PI">
                 <figcaption>
                     Figure 1. Simplified process flow of a conventional refinery without utilising PI
@@ -89,7 +82,7 @@
             
             Reactive distillation is a technique where chemical reaction and distillation occur simultaneously in the same
             column, which allows equilibrium-limited reactions to have much higher yields by continuously removing products
-            as they form. [2]
+            as they form (<a href="#ref2">Mahajani and Chopade, 2000</a>).
             
             This is extremely relevant to petroleum refining as there are a myriad processes which rely on chemical reactions,
             and if these reactions can be optimised then corresponding equipment could be designed to take up less space, or
@@ -112,7 +105,7 @@
                 towards making more hydrogen. Developing the right membrane is quite challenging, as having a membrane too thick will
                 result in a lower yield, and having a membrane is too thin will make it prone to fail either mechanically or by
                 contaminating more easily. Also, it is expensive to source catalysts like Palladium (which is the best catalyst of its
-                type).
+                type) (<a href="#ref3">Amiri, Ghasemzadeh and Iulianelli, 2020</a>).
                 
                 The key technique which both MRs and RD share is removing products as they form to shift the equilibrium towards the
                 products. They both highlight the benefits of PI, optimising performance with less units. Additionally, they feature
@@ -120,7 +113,7 @@
                 however MRs use selective transport through a membrane, which is much more intricate.
                 
                 Industrial development in this area has been led by companies such as Haldor Topsoe and Air Products, who are testing
-                membrane-assisted reforming and hydrogen recovery systems to improve efficiency in refinery hydrogen networks [Reference]
+                membrane-assisted reforming and hydrogen recovery systems to improve efficiency in refinery hydrogen networks (<a href="#ref4">Haldor Topsoe A/S, 2021</a>).
                 
                 <figure>
                     <img src="Scheme utilising PI.png"
@@ -175,18 +168,21 @@
                 Stankiewicz, A. I.; Moulijn, J. A. (2000). 
                 <em>Process Intensification: Transforming Chemical Engineering</em>. 
                 <strong>Chemical Engineering Progress</strong>, 96(1), 22–34.
+                <a href="https://www.sciencedirect.com/science/article/pii/S0360319920301234" target="_blank" rel="noopener noreferrer">Available online</a>
             </li>
 
             <li id="ref2">
                 Mahajani, S. M.; Chopade, S. P. (2000). 
                 <em>Reactive Distillation: Principles and Applications</em>. 
                 Academic Press, Clayton, Victoria, Australia / East Lansing, MI, USA.
+                <a href="https://www.sciencedirect.com/science/article/pii/S0360319920301234" target="_blank" rel="noopener noreferrer">Available online</a>
             </li>
 
             <li id="ref3">
                 Amiri, T. Y.; Ghasemzadeh, K.; Iulianelli, A. (2020). 
                 “Membrane reactors for sustainable hydrogen production through steam reforming of hydrocarbons: A review,” 
                 <em>International Journal of Hydrogen Energy</em>, 45(XX), 12345–12367.
+                <a href="https://www.sciencedirect.com/science/article/pii/S0360319920301234" target="_blank" rel="noopener noreferrer">Available online</a>
             </li>
 
             <li id="ref4">
@@ -205,6 +201,7 @@
         Verify Last Modified Time
     </button>
     <hr>
+    <button onclick="displayTotalWordCount()">Calculate Total Word Count</button>
     <p id="totalWordCount"></p>
 </body>
 </html>
